@@ -7,3 +7,13 @@
 @theme {
   --color-miwulmajoo: #49e659;
 }
+
+/* custom component classes 
+  Traditionally these would be classes like card, btn, badge — that kind of thing.
+*/
+
+@layer components {
+  .btn {
+    background-color: var(--color-miwulmajoo);
+  }
+}
