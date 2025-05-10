@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* learn more at:
+   https://tailwindcss.com/docs/theme
+   https://tailwindcss.com/docs/adding-custom-styles
+*/
+@theme {
+  --color-miwulmajoo: #49e659;
+}
