@@ -1,19 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-/* learn more at:
-   https://tailwindcss.com/docs/theme
-   https://tailwindcss.com/docs/adding-custom-styles
+/*
+  theme is a way to add custom colors, fonts, etc.
+  learn more at:
+  https://tailwindcss.com/docs/theme
+  https://tailwindcss.com/docs/adding-custom-styles
+
+  2 ways add custom theme:
+  1. add our own custom theme under @theme with variable name that are different from default
+  2. OVERRIDE default theme by redefining it within @theme
 */
 @theme {
+  /* custom colors */
   --color-miwulmajoo: #49e659;
+
+  /* override default theme */
+  --breakpoint-sm: 30rem;
 }
 
 /* custom component classes 
   Traditionally these would be classes like card, btn, badge — that kind of thing.
 */
-
 @layer components {
   .btn {
     background-color: var(--color-miwulmajoo);
+  }
+}
+
+/* import custom font */
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
   }
 }

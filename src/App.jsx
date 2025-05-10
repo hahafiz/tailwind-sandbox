@@ -8,18 +8,20 @@ function App() {
 
   return (
     <>
-      <h1 class="bg-miwulmajoo text-white border-4 border-amber-400 text-sm lg:text-lg">
+      <h1 className="bg-miwulmajoo text-white border-4 border-amber-400 text-sm lg:text-lg">
         Hello world!!!!
       </h1>
-      <h1 class="text-miwulmajoo">Hello world!!!!</h1>
+      <h1 className="text-miwulmajoo">Hello world!!!!</h1>
       <br />
       <h1>Typography sandbox</h1>
-      <h1 class="text-9xl">Title 1</h1>
-      <h1 class="text-5xl">Title 2</h1>
-      <h1 class="text-xl">Title 3</h1>
-      <p class="text-base">A regular paragraph</p>
-      <p class="text-sm">A description paragraph</p>
-      <p class="text-xs note">A little footnote</p>
+      <h1 className="text-9xl italic">Title 1</h1>
+      <h1 className="text-5xl underline decoration-amber-700 decoration-wavy">
+        Title 2
+      </h1>
+      <h1 className="text-xl line-through">Title 3</h1>
+      <p className="text-base overline">A regular paragraph</p>
+      <p className="text-sm">A description paragraph</p>
+      <p className="text-xs note">A little footnote</p>
     </>
   );
 }
