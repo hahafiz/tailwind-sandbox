@@ -58,7 +58,7 @@ function App() {
         <div className="w-3/5 h-16 bg-green-500"></div>
       </div>
       <br />
-      <h1 className="text-4xl text-bold">Flex</h1>
+      <h1 className="text-4xl font-bold">Flex</h1>
       <div className="parent">
         <div>Header</div>
         <div className="flex">
@@ -110,6 +110,87 @@ function App() {
         <div className="pt-2 pb-6 bg-sky-500">01</div>
         <div className="pt-8 pb-12 bg-red-500">02</div>
         <div className="pt-12 pb-4 bg-green-500">03</div>
+      </div>
+      <br />
+      <h1 className="text-4xl font-bold">Grid</h1>
+      <div className="h-screen text-white parent bg-slate-900">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="bg-sky-500 p-6 rounded-lg">1st columns</div>
+            <div className="bg-sky-500 p-6 rounded-lg">2nd columns</div>
+            <div className="bg-sky-500 p-6 rounded-lg">3rd columns</div>
+            <div className="bg-red-500 p-6 rounded-lg col-span-2">
+              4th columns
+            </div>
+            <div className="bg-sky-500 p-6 rounded-lg">5th columns</div>
+            <div className="bg-sky-500 p-6 rounded-lg">6th columns</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 className="text-4xl font-bold">Grid - col start / end</h3>
+      <div className="h-screen text-white parent bg-slate-900">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-6 gap-4">
+            <div className="p-6 col-start-2 col-span-4 bg-sky-500 rounded-lg">
+              01
+            </div>
+            <div className="p-6 col-start-1 col-end-3 bg-sky-500 rounded-lg">
+              02
+            </div>
+            <div className="p-6 col-end-7 col-span-2 bg-sky-500 rounded-lg">
+              03
+            </div>
+            <div className="p-6 col-start-1 col-end-7 bg-sky-500 rounded-lg">
+              04
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 className="text-4xl font-bold">Grid - auto col</h3>
+      <div className="h-screen text-white parent bg-slate-900">
+        <div className="container mx-auto">
+          <div className="grid grid-flow-col auto-cols-max">
+            <div className="p-6 rounded-lg bg-sky-500">01</div>
+            <div className="p-6 rounded-lg bg-sky-500">02</div>
+            <div className="p-6 rounded-lg bg-sky-500">03</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 className="text-4xl font-bold">Grid - template rows</h3>
+      <div className="h-screen text-white parent bg-slate-900">
+        <div className="container mx-auto">
+          <div className="grid grid-flow-col grid-rows-4 gap-4">
+            <div className="p-6 rounded-lg bg-sky-500 row-span-2">01</div>
+            <div className="p-6 rounded-lg bg-sky-500">02</div>
+            <div className="p-6 rounded-lg bg-sky-500">03</div>
+            <div className="p-6 rounded-lg bg-sky-500">04</div>
+            <div className="p-6 rounded-lg bg-sky-500 row-span-3">05</div>
+            <div className="p-6 rounded-lg bg-sky-500">06</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 className="text-4xl font-bold">Grid - auto flow</h3>
+      <div className="h-screen text-white parent bg-slate-900">
+        <div className="container mx-auto">
+          <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-4">
+            <div className="p-6 rounded-lg bg-sky-500 col-span-2">01</div>
+            <div className=" col-span-2 p-6 rounded-lg bg-sky-500">02</div>
+            <div className="p-6 rounded-lg bg-sky-500">03</div>
+            <div className="p-6 rounded-lg bg-sky-500">04</div>
+            <div className="p-6 rounded-lg bg-sky-500">05</div>
+            <div className="col-span-2 p-6 rounded-lg bg-sky-500">06</div>
+            <div className="p-6 rounded-lg bg-sky-500">07</div>
+            <div className="p-6 rounded-lg bg-sky-500">08</div>
+            <div className="p-6 rounded-lg bg-sky-500">09</div>
+            <div className="p-6 rounded-lg bg-sky-500 col-span-2 ">10</div>
+            <div className="p-6 rounded-lg bg-sky-500">11</div>
+            <div className="p-6 rounded-lg bg-sky-500">12</div>
+          </div>
+        </div>
       </div>
     </>
   );
