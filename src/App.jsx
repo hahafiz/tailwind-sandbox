@@ -192,6 +192,120 @@ function App() {
           </div>
         </div>
       </div>
+      <br />
+      <h1 className="text-4xl font-bold">Layouts</h1>
+      <p>A component for fixing an element's width to the current breakpoint</p>
+      <div className="h-screen text-white bg-slate-900">
+        <div className="container mx-auto px-4 columns-md">
+          <img
+            src="https://images.unsplash.com/photo-1746704948958-76dd4751017f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+            ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </p>
+          <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+            ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </p>
+          <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+            ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </p>
+        </div>
+      </div>
+      <br />
+      <h3 className="text-4xl font-bold">Layout - float & clear</h3>
+      <div className="h-screen text-white bg-slate-900">
+        <div className="container mx-auto px-4">
+          <img
+            className="float-left w-64"
+            src="https://images.unsplash.com/photo-1746704948958-76dd4751017f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <img
+            className="float-right w-32"
+            src="https://images.unsplash.com/photo-1746704948958-76dd4751017f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <p className="clear-left">
+            lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+            ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </p>
+          <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+            ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </p>
+          <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+            ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat
+          </p>
+        </div>
+      </div>
+      <br />
+      <h3 className="text-4xl font-bold">Layout - position</h3>
+      <div className="h-screen text-white bg-slate-900">
+        <div className="container px-2">
+          <div className="relative bg-red-500 rounded-lg p-8 w-32 h-32">
+            <div className="w-24 h-24 bg-green-500 rounded-lg absolute top-12 left-12"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 className="text-4xl font-bold">Layout - overflow & visibility</h3>
+      <div className="text-white bg-slate-900">
+        <div className="container">
+          <div className="grid grid-cols-3 gap-4">
+            <div className="bg-teal-500">01</div>
+            <div className="bg-teal-500 invisible">02</div>
+            <div className="bg-teal-500">03</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 className="text-4xl font-bold">Layout - z-index</h3>
+      <div className="text-white bg-slate-900">
+        <div className="container flex">
+          <div className="bg-red-500 p-3 border border-white rounded-full z-40">
+            05
+          </div>
+          <div className="bg-red-500 p-3 border border-white rounded-full z-30">
+            04
+          </div>
+          <div className="bg-red-500 p-3 border border-white rounded-full z-20">
+            03
+          </div>
+          <div className="bg-red-500 p-3 border border-white rounded-full z-10">
+            02
+          </div>
+          <div className="bg-red-500 p-3 border border-white rounded-full z-0">
+            01
+          </div>
+        </div>
+      </div>
+      <h3 className="text-4xl font-bold">Layout - object position</h3>
+      <div className="text-white bg-slate-900">
+        <div className="container">
+          <img
+            className="object-none object-left-bottom w-64 h-64"
+            src="https://images.unsplash.com/photo-1746704948958-76dd4751017f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+      </div>
     </>
   );
 }
