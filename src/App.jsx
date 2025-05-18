@@ -2,12 +2,21 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import DesignSystem from "./DesignSystem";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [currentPage, setCurrentPage] = useState("");
 
   return (
     <>
+      <button
+        className="bg-teal-600 text-white p-4 rounded-lg m-4"
+        onClick={() => setCurrentPage("designSystem")}
+      >
+        Click to navigate to Design System
+      </button>
+      {currentPage === "designSystem" && <DesignSystem />}
+      <br />
       <h1 className="bg-miwulmajoo text-white border-4 border-amber-400 text-sm lg:text-lg">
         Hello world!!!!
       </h1>
