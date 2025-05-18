@@ -306,6 +306,40 @@ function App() {
           />
         </div>
       </div>
+      <h1 className="text-4xl font-bold">Borders</h1>
+      <div className=" text-white bg-slate-900">
+        <header className="w-full border-b py-4 border-l-8 border-t-4">
+          Header
+        </header>
+      </div>
+      <div className=" text-white bg-slate-900">
+        <div className="divide-y divide-red-500">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+      </div>
+      <div className="text-white bg-slate-900">
+        <input
+          type="text"
+          className="border-2 border-dashed border-rose-600 outline-none"
+        />
+      </div>
+      <div className="text-white bg-slate-900">
+        <div className="grid grid-cols-3 divide-x divide-pink-500">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+      </div>
+      <div className="text-white bg-slate-900">
+        <button className="outline-4 outline-offset-2">
+          Button with outline
+        </button>
+      </div>
+      <div className="text-white bg-slate-900">
+        <button className="ring-4 ring-offset-2">Button with ring</button>
+      </div>
     </>
   );
 }
