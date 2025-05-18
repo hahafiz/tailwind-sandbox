@@ -48,6 +48,34 @@
     @apply underline text-blue-600 hover:text-purple-500 transition underline-offset-4;
   }
 
+  input,
+  select {
+    @apply text-slate-700 outline-none border rounded-sm p-1 mb-1;
+  }
+
+  select {
+    @apply pr-8;
+  }
+
+  input[type="text"] {
+    @apply border-slate-300 placeholder:italic;
+  }
+
+  input[type="text"]:disabled {
+    @apply bg-slate-100;
+  }
+
+  input[type="date"] {
+  }
+
+  input[type="checkbox"] {
+    @apply p-2 accent-purple-500 mr-1 mt-0.5;
+  }
+
+  label {
+    @apply text-sm text-slate-700 font-medium leading-4;
+  }
+
   .btn {
     @apply px-4 py-2 rounded-lg;
   }
@@ -66,5 +94,17 @@
 
   .btn-secondary {
     @apply bg-slate-600 text-white;
+  }
+
+  .Select {
+    @apply w-32 outline-none border border-slate-300 rounded-sm inline-block cursor-pointer transition;
+  }
+
+  .Select .child {
+    @apply text-slate-500 px-2 py-1;
+  }
+
+  .Select ul li {
+    @apply hover:bg-slate-100;
   }
 }
