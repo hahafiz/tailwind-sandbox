@@ -356,6 +356,24 @@ function App() {
           </button>
         </div>
       </div>
+      <br />
+      <h1 className="text-4xl font-bold">Transition</h1>
+      <div className="h-screen p-4">
+        <div className="inline-block p-4 text-black bg-white border rounded-lg shadow-md">
+          <img
+            className="w-64 mb-4 hover:scale-150 transition"
+            src="https://images.unsplash.com/photo-1746704948958-76dd4751017f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h1 className="text-2xl">Hello</h1>
+          <p className="mb-4">
+            hover over the image and button below to see the transition
+          </p>
+          <button className="px-3 py-2 text-white rounded-lg cursor-pointer bg-cyan-500 shadow-md shadow-cyan-500/50 hover:-translate-y-2 transition delay-500 duration-500 ease-in-out hover:animate-spin">
+            Say hello
+          </button>
+        </div>
+      </div>
     </>
   );
 }
