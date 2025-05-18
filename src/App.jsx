@@ -340,6 +340,22 @@ function App() {
       <div className="text-white bg-slate-900">
         <button className="ring-4 ring-offset-2">Button with ring</button>
       </div>
+      <br />
+      <h1 className="text-4xl font-bold">Effects & filters</h1>
+      <div className="h-screen text-black">
+        <div className="inline-block border border-slate-300 p-4 m-4 rounded-lg shadow-lg">
+          <img
+            className="w-64 rounded-md mb-4 blur-sm hover:blur-none brightness-50 hover:brightness-100 contrast-50 hover:contrast-100 grayscale hover:grayscale-0 saturate-150"
+            src="https://images.unsplash.com/photo-1746704948958-76dd4751017f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h3 className="text-4xl font-bold">Hello</h3>
+          <p>This is my div. Try hover over the image above</p>
+          <button className="bg-teal-500 p-2 rounded-md mt-4 cursor-pointer shadow-md shadow-teal-500/50 text-white">
+            Say Hello
+          </button>
+        </div>
+      </div>
     </>
   );
 }
